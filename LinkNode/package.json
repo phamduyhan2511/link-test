@@ -1,0 +1,38 @@
+{
+  "name": "link-node",
+  "version": "0.0.0",
+  "description": "LinkNode",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "dev": "webpack --mode development",
+    "product": "webpack --mode production",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-stage-2": "^7.0.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.0.0",
+    "file-loader": "^4.0.0",
+    "html-webpack-plugin": "^4.0.0-beta.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.41.5",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}

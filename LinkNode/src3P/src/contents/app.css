@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background: whitesmoke; */
+    color: #464646;
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+body > * {
+    -webkit-overflow-scrolling: touch
+}
+div {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+.block-ui {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.29);
+}
+.disable-block-ui {
+    display: none;
+}
+
+
+.layout-3p {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+    .layout-3p .body-3p {
+        flex: 1;
+        overflow-y: auto; 
+        padding: .5rem;;
+    }
+
+    .flex-box {
+        display: flex;
+    }
+    .flex-grow-1 {
+        flex-grow: 1;
+    }
+    .flex-box-center {
+        display: flex;
+        align-items: center;
+    }
+    .w-500 {
+        font-weight: 500;
+    }
+    /* override MUI classes */
+    .MuiTabs-indicator {
+        background-color: #133c8b !important;
+    }
+    .MuiTabs-root {
+        min-height: 35px !important;
+    }
+    .MuiTab-root {
+        min-height: 35px !important;
+        text-decoration: unset;
+        opacity: .6 !important;
+    }
+    .Mui-selected {
+        opacity: 1 !important;
+    }
+    
+    /*  */
+    
+    
+    /* layout */
+    .root-layout {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
+    }
+        .root-layout .root-body {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+    
+        .filter-layout {
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+    
+    /* layout */
+    
+    .item-label {
+        font-size: 80%;
+    }
+    .item-label::after{
+        content: ": ";
+    }
+    
+    
+
+    

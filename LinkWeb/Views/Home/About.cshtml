@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@*<script src="~/dist/Scripts/TestPage.js"></script>*@
+<div id="content"></div>
+@section scripts{
+    @Scripts.Render("~/bundles/Link")
+
+    <script>
+        window.renderPage(document.getElementById('content'))
+    </script>
+}
